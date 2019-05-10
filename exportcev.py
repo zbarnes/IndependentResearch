@@ -3,8 +3,7 @@ from ahk import ActionChain
 import os
 
 #os.startfile("C:\Program Files\SEL\SEL SynchroWAVe Event\SynchroWAVeEvent.exe")
-#open file "D:\Exported_From Zack\3 LAKES CKT 12 - 1819 S #   
-111347026301_13_201816_09_58_743_from_cev.Comtrade.Session"
+#open file "D:\Exported_From Zack\3 LAKES CKT 12 - 1819 S 111347026301_13_201816_09_58_743_from_cev.Comtrade.Session"
 #open file "D:\Exported_From Zack\FileName.Comtrade.Session"
 
 directory = "D:\TwoSevenThree_LEFT_Pending"
