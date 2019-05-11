@@ -6,6 +6,15 @@ import os
 #open file "D:\Exported_From Zack\3 LAKES CKT 12 - 1819 S 111347026301_13_201816_09_58_743_from_cev.Comtrade.Session"
 #open file "D:\Exported_From Zack\FileName.Comtrade.Session"
 
+'''
+TODO:
+-Add closing out of window at end of loop
+-Add copy and paste for lables
+
+'''
+
+
+
 directory = "D:\TwoSevenThree_LEFT_Pending"
 ahk = AHK()
 ac = ActionChain()
@@ -27,7 +36,7 @@ for filename in os.listdir(directory):
         ahk.type(split_name)
         ac.sleep(1)
         ahk.key_press('Enter')
-
+	#add exit out of current window
 
 
 
