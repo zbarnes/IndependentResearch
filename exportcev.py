@@ -7,10 +7,10 @@ export .cev files, containing voltage and current fault data from
 distribution systems, to csv format in order to do analysis
 '''
 
-
+#initialize action chain to preform task in sequential order
 ac = ActionChain()
 
-
+#enter in path to .cev file
 directory = "D:\\File Path\\"
 
 
@@ -22,7 +22,7 @@ for filename in os.listdir(directory):
         ac.sleep(3)
         base = os.path.basename(filename)
         split_name = os.path.splitext(base)[0]
-        #get rid of file names that end with 
+        #get rid of file names that end with a comma
         if(split_name[len(split_name)-1] == ","):
            split_name = split_name[:len(split_name)-1]	
         #end if	
@@ -46,6 +46,7 @@ for filename in os.listdir(directory):
         ac.sleep(1)
         ac.click()
         ac.sleep(1)
+	#preform action chain in sequential order
         ac.perform()
     #end if
-    print(filename)
+#end for
