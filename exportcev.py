@@ -1,6 +1,5 @@
 from ahk import ActionChain
 import os
-import subprocess
 
 '''
 When run this script uses autohotkeys with a python wrapper to 
